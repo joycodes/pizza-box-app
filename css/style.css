@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&family=Source+Sans+Pro&display=swap");
+html,
+body {
+  color: #4b4b4b;
+  overflow-x: hidden;
+}
+p {
+  font-family: "Faster One", cursive;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* logo  */
+.logo {
+  height: 50px;
+}
+
+.color-box {
+  color: #fd9d3e;
+}
+
+.homepage h4 {
+  font-family: "Faster One", cursive;
+}
+
+/* intro section */
+.intro h1 {
+  font-size: 4em;
+  line-height: 1.1em;
+  font-weight: 900;
+}
+
+.intro .small-image img {
+  height: 400px;
+}
+
+.intro p {
+  font-size: 21px;
+}
+
+.btn {
+  background-color: #ffc222;
+  outline: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #fd9d3e;
+  color: white;
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .intro {
+    margin-right: 20px;
+  }
+}
+
+/* ABOUT section */
+.about {
+  color: white;
+  padding: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://cdn.pixabay.com/photo/2015/04/03/13/29/pizza-705061_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about img {
+  height: 60px;
+}
+
+.about h4 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+/* order section */
+.text-bold {
+  font-weight: bold;
+}
+
+tbody {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+/* delivery modal */
+#location-input-details {
+  display: none;
+}
+
+.delivery-option {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none;
+  color: #fd9d3e;
+}
+
+a:hover {
+  color: #fd9d3e;
+}
+
+/* footer */
+footer {
+  background-color: #323232;
+  color: white;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+footer p {
+  line-height: 1.3em;
+}
