@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <!-- about section -->
+    <!-- About us section -->
     <div class="about mb-3">
         <div class="container">
             <div class="row">
@@ -78,6 +78,46 @@
             </div>
         </div>
     </div>
+    <!-- order section -->
+    <div id="order-section" class="order my-5">
+        <div class="container">
+            <div class="row">
+                <h2>Order Here</h2>
+                <p>Best pizza palace in town</p>
+                <div class="col-md-5 shadow p-4">
+                    <p class="text-center text-danger" id="error"></p>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="">Select Pizza <span class="text-danger">*</span></label>
+                            <select name="pizza" id="pizza" class="form-control">
+                                <option value="" selected disabled>--Select Pizza--</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="">Size <span class="text-danger">*</span></label>
+                            <select name="size" id="size" class="form-control">
+                                <option value="" selected disabled>--Select pizza sizes--</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="">Crust <span class="text-danger">*</span></label>
+                            <select name="crust" id="crust" class="form-control">
+                                <option value="" selected disabled>--Select Crust--</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <p>Select Your Toppings at sh. 50 each</p>
+                            <div class="row toppings">
+
+                            </div>
+                        </div>
+                        <div class="mt-4 text-end">
+                            <button class="btn">Add <i class="fa fa-plus-circle"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+    
     
 </body>
 </html>
