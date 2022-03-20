@@ -117,6 +117,127 @@
                     </form>
                 </div>
 
+                <div class="col-md-7 shadow">
+                    <table class="table table-responsive order-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Size</th>
+                                <th>Crust</th>
+                                <th>Topping</th>
+                                <th width="33">Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="6" class="empty-cart text-center">
+                                    <img src="images/empty-cart.png" alt="Empty cart image"> <br>
+                                    Your cart is empty!
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-3 text-end">
+                        <p class="grand-total">Total cost: Ksh <span class="text-bold">0</span></p>
+                    </div>
+                    <div class="delivery-button float-end m-3">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#deliveryMethodModal">Next Step <i
+                                class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delivery method section -->
+    <!-- modal -->
+    <div class="modal fade" id="deliveryMethodModal" tabindex="-1" aria-labelledby="deliveryMethodModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deliveryMethodModalLabel">DELIVERY METHOD</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- input modal -->
+                    <div id="select-delivery-method">
+                        <p>How do you want your order delivered? <span class="text-center">*</span></p>
+                        <p class="delivery-option text-danger"></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deliveryMethod" id="deliveryMethod1"
+                                value="pickup">
+                            <label class="form-check-label" for="deliveryMethod1">
+                                Pickup
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deliveryMethod" id="deliveryMethod2"
+                                value="delivery">
+                            <label class="form-check-label" for="deliveryMethod2">
+                                Delivery to your home or office
+                            </label>
+                            <p>Please ensure you have entered your home or office address so that we can deliver to you
+                                successfully. for <span class="color-palace">KSh 128</span></p>
+                        </div>
+                        <div class="location mt-5">
+                            <form id="delivery-form">
+                                <div id="location-input-details">
+                                    <h5>Delivery Details</h5>
+                                    <p class="text-danger error-delivery-location"></p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" name="name" id="customerName">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Phone Number <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="number" class="form-control" name="phone"
+                                                    id="customerPhone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Location <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" name="location"
+                                                    id="customerLocation">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Additional
+                                                    Information
+                                                </label>
+                                                <textarea name="additionalInfo" class="form-control" id="additionalInfo"
+                                                    rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn" id="checkout-button">Checkout</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- div to display the summary of all the orders -->
+                    <div id="summary-order">
+                        <div class="delivery-head"></div>
+                        <div class="delivery-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     
 </body>
