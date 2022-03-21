@@ -16,7 +16,7 @@ p {
 }
 
 .color-box {
-  color: #fd9d3e;
+  color: red;
 }
 
 .homepage h4 {
@@ -39,7 +39,7 @@ p {
 }
 
 .btn {
-  background-color: #ffc222;
+  background-color: red;
   outline: none;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -47,7 +47,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #fd9d3e;
+  background-color: rgb(100, 194, 231);
   color: white;
 }
 
@@ -101,11 +101,11 @@ tbody {
 
 a {
   text-decoration: none;
-  color: #fd9d3e;
+  color: red;
 }
 
 a:hover {
-  color: #fd9d3e;
+  color: rgb(100, 194, 231);
 }
 
 /* footer */
