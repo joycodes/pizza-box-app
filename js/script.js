@@ -57,11 +57,11 @@ Pizza.prototype.calculateTotal = function () {
 const pizzaSizes = [
     {
         size: "small",
-        price: 600,
+        price: 650,
     },
     {
         size: "medium",
-        price: 800,
+        price: 850,
     },
     {
         size: "large",
@@ -268,7 +268,7 @@ $(function () {
                     console.log(cart);
                     $("#select-delivery-method").hide();
                     $(".delivery-head").append(`
-                    <div class="alert alert-success" role="alert">Hello ${customerName}. Order successfully processed. Your order will be delivered to your location(${customerLocation})🙂</div>
+                    <div class="alert alert-success" role="alert">Hello ${customerName}. Hello. Order successfully placed. Your order will be delivered to your location(${customerLocation})🙂</div>
                         <div class="d-flex justify-content-between">
                             <div>
                                 <h5>Order Summary 😇</h5>
@@ -313,7 +313,7 @@ $(function () {
                     console.log(getTotalPlusDeliveryFee);
                     $("#select-delivery-method").hide();
                     $(".delivery-head").append(`
-                    <div class="alert alert-success" role="alert">Hello. Order successfully processed. Your order will be ready for pick up in an hour 🙂</div>
+                    <div class="alert alert-success" role="alert">Hello. Order successfully placed. Your order will be ready for pick up in an hour 🙂</div>
                         <div class="d-flex justify-content-between">
                             <div>
                                 <h5>Order Summary 😇</h5>
